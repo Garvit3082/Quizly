@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizizz Header</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h1>Quizizz</h1>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#">For Schools</a></li>
+        <li><a href="#">Plans</a></li>
+        <li><a href="#">Solutions</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">For Business</a></li>
+      </ul>
+    </nav>
+    <div class="auth-buttons">
+      <button class="quote-button">Get a Quote</button>
+      <button class="code-button">Enter Code</button>
+      <button class="login-button" id="open-login">Log in</button>
+      <button class="signup-button" id="open-signup">Sign up</button>
+    </div>
+  </header>
+
+  <!-- Login Modal -->
+  <div class="modal" id="login-modal">
+    <div class="modal-content">
+      <span class="close" id="close-login">&times;</span>
+      <h2>Login</h2>
+      <form>
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" placeholder="Enter your email" required>
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" placeholder="Enter your password" required>
+        <button type="submit">Log in</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div class="modal" id="signup-modal">
+    <div class="modal-content">
+      <span class="close" id="close-signup">&times;</span>
+      <h2>Sign Up</h2>
+      <form>
+        <label for="signup-email">Email:</label>
+        <input type="email" id="signup-email" placeholder="Enter your email" required>
+        <label for="signup-password">Password:</label>
+        <input type="password" id="signup-password" placeholder="Create a password" required>
+        <label for="signup-confirm-password">Confirm Password:</label>
+        <input type="password" id="signup-confirm-password" placeholder="Confirm your password" required>
+        <button type="submit">Sign up</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="action.js"></script>
+</body>
+</html>
